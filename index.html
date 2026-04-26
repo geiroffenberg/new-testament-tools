@@ -87,6 +87,17 @@
       padding: 1rem;
       box-shadow: var(--card-shadow);
       backdrop-filter: blur(1.5px);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+
+    .app-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(22, 42, 32, 0.2);
+      border-color: rgba(47, 95, 74, 0.4);
     }
 
     .app-name {
@@ -136,11 +147,11 @@
   <main class="container">
     <h2 class="section-heading">App Placeholders</h2>
     <section class="apps-grid" aria-label="App placeholders">
-      <article class="app-card">
-        <h3 class="app-name">App Placeholder 01</h3>
-        <p class="app-meta">Short app description goes here.</p>
-        <span class="status">Coming Soon</span>
-      </article>
+      <a href="./red_letter_gospels/" class="app-card">
+        <h3 class="app-name">Red Letter Gospels</h3>
+        <p class="app-meta">Read the Gospel of Jesus in red text. Available as web app and Android app.</p>
+        <span class="status">Available</span>
+      </a>
       <article class="app-card">
         <h3 class="app-name">App Placeholder 02</h3>
         <p class="app-meta">Short app description goes here.</p>
