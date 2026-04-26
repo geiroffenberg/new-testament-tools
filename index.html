@@ -100,6 +100,22 @@
       border-color: rgba(47, 95, 74, 0.4);
     }
 
+    .app-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      flex: 0 0 56px;
+      object-fit: cover;
+      box-shadow: 0 6px 16px rgba(22, 42, 32, 0.16);
+      background: rgba(90, 143, 115, 0.12);
+    }
+
     .app-name {
       margin: 0;
       color: var(--green-900);
@@ -148,7 +164,10 @@
     <h2 class="section-heading">App Placeholders</h2>
     <section class="apps-grid" aria-label="App placeholders">
       <a href="./red_letter_gospels/" class="app-card" target="_blank" rel="noopener noreferrer">
-        <h3 class="app-name">Red Letter Gospels</h3>
+        <div class="app-card-header">
+          <img src="./red_letter_gospels/assets/assets/app_icon.png" alt="Red Letter Gospels icon" class="app-icon" />
+          <h3 class="app-name">Red Letter Gospels</h3>
+        </div>
         <p class="app-meta">Read the Gospel of Jesus in red text. Available as web app and Android app.</p>
         <span class="status">Available</span>
       </a>
