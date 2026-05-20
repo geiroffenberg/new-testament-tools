@@ -141,6 +141,39 @@
       letter-spacing: 0.04em;
     }
 
+    .card-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.8rem;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: opacity 0.2s;
+    }
+
+    .btn-link:hover { opacity: 0.8; }
+
+    .btn-web {
+      background: rgba(47, 95, 74, 0.15);
+      color: var(--green-900);
+      border: 1px solid rgba(47, 95, 74, 0.3);
+    }
+
+    .btn-play {
+      background: var(--green-900);
+      color: #fff;
+    }
+
     footer {
       border-top: 1px solid rgba(47, 95, 74, 0.2);
       padding: 1rem 0 2.5rem;
@@ -160,55 +193,87 @@
     <h1 class="title">New Testament Tools</h1>
     <p class="subtitle">METANOIA • Bible Apps by Metanoia Apps</p>
     <p class="intro">
-      A growing collection of focused Bible study and reading tools. This is the early home page placeholder;
-      app details and download links will be added next.
+      A growing collection of focused Bible study and reading tools by Metanoia Apps.
+      All apps are available on Google Play.
     </p>
   </header>
 
   <main class="container">
-    <h2 class="section-heading">App Placeholders</h2>
-    <section class="apps-grid" aria-label="App placeholders">
-      <a href="./red_letter_gospels/" class="app-card" target="_blank" rel="noopener noreferrer">
+    <h2 class="section-heading">Apps</h2>
+    <section class="apps-grid" aria-label="Apps">
+
+      <article class="app-card">
         <div class="app-card-header">
           <img src="./red_letter_gospels/assets/assets/app_icon.png" alt="Red Letter Gospels icon" class="app-icon" />
           <h3 class="app-name">Red Letter Gospels</h3>
         </div>
-        <p class="app-meta">Read the Gospel of Jesus in red text. Available as web app and Android app.</p>
-        <span class="status">Available</span>
-      </a>
-            <a href="./nt_commentaries/" class="app-card" target="_blank" rel="noopener noreferrer">
+        <p class="app-meta">Read the words of Jesus highlighted in red across all four Gospels.</p>
+        <div class="card-links">
+          <a href="./red_letter_gospels/" class="btn-link btn-web" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.metamind.red_letter_gospels_2" class="btn-link btn-play" target="_blank" rel="noopener noreferrer">▶ Google Play</a>
+        </div>
+      </article>
+
+      <article class="app-card">
         <div class="app-card-header">
           <img src="./nt_commentaries/assets/assets/NT_icon.png" alt="NT Commentaries icon" class="app-icon" />
           <h3 class="app-name">NT Commentaries</h3>
         </div>
-        <p class="app-meta">Explore New Testament commentaries. Available as web app and Android app.</p>
-        <span class="status">Available</span>
-      </a>
-      <article class="app-card">
-        <h3 class="app-name">App Placeholder 02</h3>
-        <p class="app-meta">Short app description goes here.</p>
-        <span class="status">Coming Soon</span>
+        <p class="app-meta">Explore classic New Testament commentaries (Clarke, JFB, MHC, RWP).</p>
+        <div class="card-links">
+          <a href="./nt_commentaries/" class="btn-link btn-web" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.metamind.nt_commentaries" class="btn-link btn-play" target="_blank" rel="noopener noreferrer">▶ Google Play</a>
+        </div>
       </article>
+
       <article class="app-card">
-        <h3 class="app-name">App Placeholder 03</h3>
-        <p class="app-meta">Short app description goes here.</p>
-        <span class="status">Coming Soon</span>
+        <div class="app-card-header">
+          <img src="./icons/gospelcomments.png" alt="Gospel Comments icon" class="app-icon" />
+          <h3 class="app-name">Gospel Comments</h3>
+        </div>
+        <p class="app-meta">Read classic commentary notes alongside each Gospel passage.</p>
+        <div class="card-links">
+          <a href="./gospel_comments/" class="btn-link btn-web" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.metamind.gospel_comments" class="btn-link btn-play" target="_blank" rel="noopener noreferrer">▶ Google Play</a>
+        </div>
       </article>
+
       <article class="app-card">
-        <h3 class="app-name">App Placeholder 04</h3>
-        <p class="app-meta">Short app description goes here.</p>
-        <span class="status">Coming Soon</span>
+        <div class="app-card-header">
+          <img src="./icons/gospelquiz.png" alt="Gospel Quiz icon" class="app-icon" />
+          <h3 class="app-name">Gospel Quiz</h3>
+        </div>
+        <p class="app-meta">Test your knowledge of the Gospels with interactive quizzes.</p>
+        <div class="card-links">
+          <a href="./gospel_quiz/" class="btn-link btn-web" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.metamind.gospelquiz" class="btn-link btn-play" target="_blank" rel="noopener noreferrer">▶ Google Play</a>
+        </div>
       </article>
+
       <article class="app-card">
-        <h3 class="app-name">App Placeholder 05</h3>
-        <p class="app-meta">Short app description goes here.</p>
-        <span class="status">Coming Soon</span>
+        <div class="app-card-header">
+          <img src="./icons/kjv_greek.png" alt="KJV Greek icon" class="app-icon" />
+          <h3 class="app-name">KJV Greek</h3>
+        </div>
+        <p class="app-meta">Read the KJV New Testament with the underlying Greek text alongside.</p>
+        <div class="card-links">
+          <a href="./kjv_greek/" class="btn-link btn-web" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.metamind.newtestamentwithstrongs" class="btn-link btn-play" target="_blank" rel="noopener noreferrer">▶ Google Play</a>
+        </div>
       </article>
+
       <article class="app-card">
-        <h3 class="app-name">App Placeholder 06</h3>
-        <p class="app-meta">Short app description goes here.</p>
-        <span class="status">Coming Soon</span>
+        <div class="app-card-header">
+          <img src="./icons/biblesearch.png" alt="Gospel Search icon" class="app-icon" />
+          <h3 class="app-name">Gospel Search</h3>
+        </div>
+        <p class="app-meta">Search across the Gospels instantly by keyword or phrase.</p>
+        <div class="card-links">
+          <a href="./gospel_search/" class="btn-link btn-web" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.metamind.biblesearch" class="btn-link btn-play" target="_blank" rel="noopener noreferrer">▶ Google Play</a>
+        </div>
       </article>
+
     </section>
   </main>
 
